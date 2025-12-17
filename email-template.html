@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteio do Amigo Secreto</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f5f5f5;">
+
+  <table role="presentation" style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;">
+    <tr>
+      <td style="padding: 40px 20px;">
+
+        <!-- Main container -->
+        <table role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); overflow: hidden;">
+
+          <!-- Header with gradient -->
+          <tr>
+            <td style="background: linear-gradient(to right, #dc2626, #15803d); padding: 60px 30px; text-align: center; position: relative;">
+              <div style="background-color: rgba(255, 255, 255, 0.2); width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 40px;">🎁</span>
+              </div>
+              <h1 style="margin: 0 0 10px; color: #ffffff; font-size: 32px; font-weight: bold;">🎅 Sorteio do Amigo Secreto</h1>
+              <p style="margin: 0; color: rgba(255, 255, 255, 0.9); font-size: 16px;">Ho ho ho! Chegou a hora de espalhar alegria!</p>
+              <!-- Decorative snowflakes -->
+              <div style="position: absolute; top: 20%; left: 10%; font-size: 32px; opacity: 0.2;">❄</div>
+              <div style="position: absolute; top: 15%; right: 15%; font-size: 28px; opacity: 0.2;">❄</div>
+            </td>
+          </tr>
+
+          <!-- Content -->
+          <tr>
+            <td style="padding: 40px 30px;">
+
+              <!-- Greeting -->
+              <div style="text-align: center; margin-bottom: 40px;">
+                <p style="margin: 0 0 10px; font-size: 18px; color: #666;">
+                  Olá <strong style="color: #000;">[PARTICIPANT_NAME]</strong>,
+                </p>
+                <p style="margin: 0; font-size: 16px; color: #666;">
+                  O sorteio do Amigo Secreto foi concluído! 🎉
+                </p>
+              </div>
+
+              <!-- Main reveal box -->
+              <div style="background: linear-gradient(to bottom right, #fef2f2, #f0fdf4); border: 2px dashed #fca5a5; border-radius: 12px; padding: 40px 30px; text-align: center; margin-bottom: 40px; position: relative;">
+                <span style="position: absolute; top: 15px; right: 15px; font-size: 24px;">✨</span>
+                <span style="position: absolute; bottom: 15px; left: 15px; font-size: 20px;">✨</span>
+                <p style="margin: 0 0 10px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #666;">Você tirou</p>
+                <p style="margin: 0; font-size: 36px; font-weight: bold; color: #000;">[DRAW_NAME]</p>
+              </div>
+
+              <!-- Event details -->
+              <div style="background-color: #f9fafb; border-radius: 12px; padding: 30px; margin-bottom: 30px;">
+                <h2 style="margin: 0 0 20px; font-size: 18px; font-weight: 600; color: #000;">
+                  📋 Detalhes do Evento
+                </h2>
+
+                <table role="presentation" style="width: 100%; border-collapse: collapse;">
+                  <tr>
+                    <td style="padding: 12px 0; vertical-align: top;">
+                      <span style="color: #dc2626; font-size: 20px; margin-right: 12px;">📅</span>
+                    </td>
+                    <td style="padding: 12px 0;">
+                      <p style="margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #000;">Data</p>
+                      <p style="margin: 0; font-size: 14px; color: #666;">[EVENT_DATE]</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 12px 0; vertical-align: top;">
+                      <span style="color: #16a34a; font-size: 20px; margin-right: 12px;">💰</span>
+                    </td>
+                    <td style="padding: 12px 0;">
+                      <p style="margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #000;">Orçamento</p>
+                      <p style="margin: 0; font-size: 14px; color: #666;">[EXPECTED_VALUE]</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 12px 0; vertical-align: top;">
+                      <span style="color: #2563eb; font-size: 20px; margin-right: 12px;">📍</span>
+                    </td>
+                    <td style="padding: 12px 0;">
+                      <p style="margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #000;">Local</p>
+                      <p style="margin: 0; font-size: 14px; color: #666;">[PLACE]</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+
+              <!-- Important reminder -->
+              <div style="background-color: #fefce8; border-left: 4px solid #eab308; border-radius: 8px; padding: 20px; margin-bottom: 30px;">
+                <p style="margin: 0 0 8px; font-size: 14px; font-weight: 600; color: #854d0e;">🤫 Lembre-se: Mantenha segredo!</p>
+                <p style="margin: 0; font-size: 14px; color: #a16207;">Não revele quem você tirou até a troca de presentes!</p>
+              </div>
+
+              <!-- Footer -->
+              <div style="border-top: 1px solid #e5e7eb; padding-top: 30px; text-align: center;">
+                <p style="margin: 0 0 10px; font-size: 14px; color: #666;">
+                  Dúvidas ou precisa de ajuda? Entre em contato com o organizador
+                </p>
+                <p style="margin: 0 0 20px;">
+                  <a href="mailto:[EMAIL_ORGANIZER]" style="color: #2563eb; text-decoration: none; font-size: 14px; font-weight: 500;">
+                    ✉️ [EMAIL_ORGANIZER]
+                  </a>
+                </p>
+                <p style="margin: 0; font-size: 12px; color: #999;">Boas festas! 🎁✨</p>
+              </div>
+
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
