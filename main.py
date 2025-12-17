@@ -8,7 +8,6 @@ import os
 from dotenv import load_dotenv
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from string.templatelib import Template
 
 # Load environment variables from .env file
 load_dotenv()
@@ -124,8 +123,7 @@ def send_email(giver, receiver, args, smtp_password, template):
     """Constructs and sends a single Secret Santa email."""
     
     # Populate template
-    giverName = giver["name"]
-    body = template.replace("[PARTICIPANT_NAME]", giverName)
+    body = template.replace("[PARTICIPANT_NAME]", giver["name"])
     body = body.replace("[DRAW_NAME]", receiver["name"])
     body = body.replace("[EVENT_DATE]", args.event_date)
     body = body.replace("[EXPECTED_VALUE]", args.expected_value)
@@ -133,7 +131,7 @@ def send_email(giver, receiver, args, smtp_password, template):
     body = body.replace("[EMAIL_ORGANIZER]", args.organizer_email)
 
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = Template("🎅 Ola $giverName Você tem um Amigo Secreto!")
+    msg["Subject"] = f"🎅 Ola {giver["name"]} Você tem um Amigo Secreto!"
     msg["From"] = args.smtp_user
     msg["To"] = giver["email"]
     
